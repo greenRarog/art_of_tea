@@ -8,11 +8,8 @@ use Inertia\Response;
 
 class CardController extends Controller
 {
-    public function create(): Response
+    public function create(Request $request): Response
     {
-        return Inertia::render('Card/Create', [
-            'test1' => 'test1',
-            'test2' => 'text test 2',
-        ]);
+        return Inertia::render('Card/Create');
     }
 }
